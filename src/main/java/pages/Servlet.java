@@ -56,18 +56,12 @@ public class Servlet extends HttpServlet {
                 }else {
                     firstNo=Expression.calculate(firstNo,Float.parseFloat(x.getValue()),op);
                     System.out.println(firstNo+" from third if block");
-
-                    pw.print(firstNo);
                 }
             } else if (x.getType().equals("OPERATOR")) {
                 op=x.getValue();
                 System.out.println(op);
             }
         }
-
-
+        pw.print(firstNo);
     }
-
-
-
 }

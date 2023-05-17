@@ -44,7 +44,6 @@ public  class Expression {
         switch (op){
             case "ADD":
                 result = firstNo + secondNo;
-
                 break;
             case "SUBTRACT":
                 result = firstNo - secondNo;
