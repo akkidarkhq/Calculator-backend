@@ -15,7 +15,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-
 @WebServlet("/calc")
 public class Servlet extends HttpServlet {
     Gson gson = new Gson();
@@ -29,7 +28,7 @@ public class Servlet extends HttpServlet {
 
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-      PrintWriter pw = resp.getWriter();
+        PrintWriter pw = resp.getWriter();
         resp.setContentType("application/json");
 //      resp.setHeader("Access-Control-Allow-Origin","*");
         StringBuilder sb = new StringBuilder();

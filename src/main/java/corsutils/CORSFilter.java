@@ -1,4 +1,4 @@
-package corsUtils;
+package corsutils;
 
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
@@ -9,9 +9,6 @@ import java.io.IOException;
 public class CORSFilter implements Filter {
 
     public CORSFilter() {
-    }
-
-    public void destroy() {
     }
 
     public void doFilter(ServletRequest servletRequest, ServletResponse servletResponse, FilterChain chain)
@@ -35,8 +32,6 @@ public class CORSFilter implements Filter {
         // pass the request along the filter chain
         chain.doFilter(request, servletResponse);
     }
-
-
 
     public void init(FilterConfig filterConfig) throws ServletException {
     }

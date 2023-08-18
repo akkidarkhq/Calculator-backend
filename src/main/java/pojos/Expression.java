@@ -1,7 +1,6 @@
 package pojos;
 
 import java.util.ArrayList;
-
 public  class Expression {
     private String type;
     private String value;
@@ -37,12 +36,10 @@ public  class Expression {
                 '}';
     }
 
-
-
     public static float calculate(float firstNo,float secondNo, String op){
         float result = 0;
         switch (op){
-            case "ADD":
+            case "ADDITION":
                 result = firstNo + secondNo;
                 break;
             case "SUBTRACT":
