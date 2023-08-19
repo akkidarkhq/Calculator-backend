@@ -9,7 +9,7 @@ pipeline {
             agent any
             
             steps {
-                echo 'hello Unoveo Ki Janta'
+                echo 'hello Unoveo'
             }
         }
 		
